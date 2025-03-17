@@ -4,9 +4,313 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Index</title>
 </head>
 <body>
-    <h1>ABC</h1>
+    
+    <header>
+        <div class="topheader">
+            <div class="logo">
+                <a href="/" title="Truyện tranh online">
+                    <img style="height: 40px; width: 40px;" src="https://st.truyenqqto.com/template/frontend/images/logo-icon.png" alt="">     
+                    <p style="color: rgb(47, 153, 245);">Manga</p>
+                </a>                
+            </div>
+            <div class="righthead">
+                <ul>
+                    <li>
+                        <select name="" id="changelanguage">
+                            <option value="">Tiếng Việt</option>
+                            <option value="">Tiếng Anh</option>
+                        </select>
+                    </li>
+                    <li><button>đăng ký</button></li>
+                    <li><button>đăng nhập</button></li>
+                </ul>
+            </div>
+            <button id="settingdarkmode">🌙</button>
+            <script src="/js/script.js"></script>
+            <div class="searchhead">
+                <input type="text" id="search" placeholder="Tìm kiếm truyện">
+                <button id="searchbtn"><img src="" alt="">Tìm kiếm</button>
+            </div>
+            <div id="text-effect" class="rainbow-text">Chào mừng đến với Manga</div>
+        </div>
+        <div class="bottomheader"></div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thể loại</a></li>
+            <li class="dropdown" >
+                <a href="#">Xếp hạng ▼</a> 
+                <!-- <ul class="submenu">
+                    <li><a href="#">Ngày</a></li>
+                    <li><a href="#">Tuần</a></li>
+                    <li><a href="#">Tháng</a></li>
+                </ul> -->
+            </li>
+            <li><a href="#">Lịch sử</a></li>
+            <li><a href="#">Theo dõi</a></li>
+            <li><a href="#">Thảo luận</a></li>
+            <li><a href="#">Fanpage</a></li>
+        </ul>
+    </nav>
+
+    <div class="allcontent">
+        <div class="leftcontent"></div>
+        <div class="maincontent">
+            <div class="suggest">
+                <h2 class="section-title">⭐ Truyện Hay</h2>
+                <ul class="comic-list">
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 1">
+                            <span class="label new">1 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                        </div>
+                        <h3 class="comic-title">Đại Quản Gia Là Ma Hoàng</h3>
+                        <p class="comic-chapter">Chương 675</p>
+                    </li>
+            
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 2">
+                            <span class="label new">2 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                        </div>
+                        <h3 class="comic-title">Bách Luyện Thành Thần</h3>
+                        <p class="comic-chapter">Chương 1274</p>
+                    </li>
+            
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+                </ul>
+                <h2 class="section-title">⭐ Truyện Mới Cập Nhật</h2>
+
+                <ul class="comic-list">
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 1">
+                            <span class="label new">1 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Đại Quản Gia Là Ma Hoàng</h3>
+                        <p class="comic-chapter">Chương 675</p>
+                    </li>
+            
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 2">
+                            <span class="label new">2 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Bách Luyện Thành Thần</h3>
+                        <p class="comic-chapter">Chương 1274</p>
+                    </li>
+            
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+                </ul>
+                <ul class="comic-list">
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 1">
+                            <span class="label new">1 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Đại Quản Gia Là Ma Hoàng</h3>
+                        <p class="comic-chapter">Chương 675</p>
+                    </li>
+            
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 2">
+                            <span class="label new">2 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Bách Luyện Thành Thần</h3>
+                        <p class="comic-chapter">Chương 1274</p>
+                    </li>
+            
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+
+                    <li class="comic">
+                        <div class="comic-image">
+                            <img src="/images/titledefault.jpg" alt="Truyện 3">
+                            <span class="label new">3 Ngày Trước</span>
+                            <span class="label hot">Hot</span>
+                            <span class="info">
+                                <i class="fa fa-eye">124k</i>
+                                <i class="fa fa-comment">2.7k</i>
+                                <i class="fa fa-heart">3k</i>
+                            </span>
+                        </div>
+                        <h3 class="comic-title">Tinh Vô Thần Quyết</h3>
+                        <p class="comic-chapter">Chương 839</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightcontent"></div>
+    </div>
 </body>
 </html>
