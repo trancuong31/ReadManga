@@ -1,5 +1,13 @@
 {
+  "name": "microservice-app",
+  "version": "1.0.0",
+  "description": "A simple microservice application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.17.1",
+    "mssql": "^11.0.1"
   }
 }

@@ -39,7 +39,7 @@ header{
     font-size: 22px;
     letter-spacing: 1px;
     line-height: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
     
 }
 .topheader .logo a{
@@ -59,10 +59,10 @@ header{
     font-size: 17px;
     margin-top: 7px;
     background-color: transparent;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 .searchhead{
-    width: 620px;
+    width: 420px;
     position: relative;
     margin-left: 20px;
     float: left;
@@ -70,7 +70,7 @@ header{
     align-items: center;
     flex-direction: row;
     line-height: 20px;
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
 .searchhead #search{
     padding: 10px;
@@ -221,8 +221,8 @@ header{
 
 .section-title {
     font-size: 22px;
-    color: #e74c3c;
-    margin: 20px 0;
+    /* color: #e74c3c; */
+    margin: 10px 0;
 }
 
 /* Danh sách truyện gợi ý */
@@ -302,7 +302,7 @@ header{
 /* Chương */
 .comic-chapter {
     font-size: 14px;
-    color: gray;
+    /* color: gray; */
 }
 .titlelist{
     display: flex;
@@ -317,7 +317,7 @@ header{
     top: 50%;
     transform: translateY(-50%);
     margin-right: 20px;
-    color: #fff;
+    color: #0099ff;
     border-radius: 150px;
     border: 1px solid #fff;
     background-color: transparent;
@@ -357,6 +357,7 @@ header{
 h4 {
     color: #000;
     margin-top: 0;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -367,7 +368,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     padding: 8px;
     margin: 8px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #f8dede;
     border-radius: 5px;
 }
 #signup {
@@ -378,10 +379,37 @@ input[type="text"], input[type="email"], input[type="password"] {
     margin-top: 16px;
     background-color: #0000ff;
     text-align: center;
-    color: white;  /* Màu chữ trắng */
+    color: white; 
     cursor: pointer;
     transition: .3s all ease-in-out;
 }
 #signup:hover{
     transform: translateY(-2px);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    transition: .3 all ease-in-out;
+}
+.social #facebook{
+    background-color: #3b5998;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+.social #facebook:hover{
+    background-color: #2d4373;
+}
+.social #google{
+    background-color: #db4437;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.social #google:hover{
+    background-color: #b44b41;
 }

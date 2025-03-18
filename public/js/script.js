@@ -29,3 +29,32 @@ function openModal() {
 function closeModal() {
     document.getElementById("modalSignup").style.display = "none";
 }
+
+//register
+const registerForm = document.getElementById("registerForm");
+registerForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const data = { username, email, password };
+
+    try {
+        const response = await fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data) 
+        });
+
+        const result = await response.json(); 
+        console.log('Success:', result);
+        alert(result.message || 'Signup successful!');
+    } catch (err) {
+        console.error("Error register", err);
+        alert('Signup error!');
+    }
+});
