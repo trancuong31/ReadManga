@@ -25,7 +25,7 @@
                             <option value="">Tiếng Anh</option>
                         </select>
                     </li>
-                    <li><button>đăng ký</button></li>
+                    <li><button onclick="openModal()">đăng ký</button></li>
                     <li><button>đăng nhập</button></li>
                 </ul>
             </div>
@@ -57,12 +57,11 @@
             <li><a href="#">Fanpage</a></li>
         </ul>
     </nav>
-
     <div class="allcontent">
         <div class="leftcontent"></div>
         <div class="maincontent">
             <div class="suggest">
-                <h2 class="section-title">⭐ Truyện Hay</h2>
+                <h2 class="section-title">⭐ Truyện Hay</h2>                
                 <ul class="comic-list">
                     <li class="comic">
                         <div class="comic-image">
@@ -124,8 +123,12 @@
                         <p class="comic-chapter">Chương 839</p>
                     </li>
                 </ul>
-                <h2 class="section-title">⭐ Truyện Mới Cập Nhật</h2>
-
+                <div class="titlelist">
+                    <h2 class="section-title" style="color: #fff;"><span><i class="fas fa-cloud"></i></span> Truyện Mới Cập Nhật</h2>
+                    <button class="filter">
+                        <i class="fas fa-filter"></i>
+                    </button>
+                </div>
                 <ul class="comic-list">
                     <li class="comic">
                         <div class="comic-image">
@@ -312,5 +315,27 @@
         </div>
         <div class="rightcontent"></div>
     </div>
+
+    <div class="modalsigup" id="modalSignup">
+        <div class="modal-content">
+            <span style="color: black;" class="close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </span>
+            <h4>Sign Up</h4>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+    
+                <button id="signup" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>

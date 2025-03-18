@@ -20,3 +20,12 @@ darkModeButton.addEventListener("click", () => {
         darkModeButton.textContent = "🌙"; 
     }
 });
+
+//sigup modal
+function openModal() {
+    document.getElementById("modalSignup").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modalSignup").style.display = "none";
+}
